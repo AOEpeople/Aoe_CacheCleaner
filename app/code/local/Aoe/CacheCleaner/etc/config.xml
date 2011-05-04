@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+	<modules>
+		<Aoe_CacheCleaner>
+			<active>true</active>
+			<codePool>local</codePool>
+			<version>0.0.1</version>
+		</Aoe_CacheCleaner>
+	</modules>
+	
+	<global>
+	
+		<models>
+			<aoecachecleaner>
+				<class>Aoe_CacheCleaner_Model</class>
+			</aoecachecleaner>
+		</models>
+	
+		<helpers>
+			<aoecachecleaner>
+				<class>Aoe_CacheCleaner_Helper</class>
+			</aoecachecleaner>
+		</helpers>
+	
+	</global>
+	
+	<crontab>
+		<jobs>
+			<aoecachecleaner>
+				<!-- Execute this task once in a hour -->
+				<schedule><cron_expr>17 * * * *</cron_expr></schedule>
+				<run><model>aoecachecleaner/cleaner::clean</model></run>
+			</aoecachecleaner>
+		</jobs>
+	</crontab>
+	
+</config>
