@@ -5,7 +5,7 @@
 		<Aoe_CacheCleaner>
 			<active>true</active>
 			<codePool>local</codePool>
-			<version>0.0.1</version>
+			<version>0.0.2</version>
 		</Aoe_CacheCleaner>
 	</modules>
 
@@ -28,11 +28,18 @@
 	<crontab>
 		<jobs>
 			<aoecachecleaner>
-				<!-- Execute this task once in a hour -->
-				<schedule><cron_expr>17 * * * *</cron_expr></schedule>
+				<schedule><config_path>system/cachecleaner/scheduler_cron_expr</config_path></schedule>
 				<run><model>aoecachecleaner/cleaner::clean</model></run>
 			</aoecachecleaner>
 		</jobs>
 	</crontab>
+
+	<default>
+		<system>
+			<cachecleaner>
+				<scheduler_cron_expr>18 * * * *</scheduler_cron_expr>
+			</cachecleaner>
+		</system>
+	</default>
 
 </config>
