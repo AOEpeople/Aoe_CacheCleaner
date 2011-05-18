@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<sections>
+		<system>
+			<groups>
+				<cachecleaner translate="label">
+					<label>Cache Cleaning</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>200</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>0</show_in_website>
+					<show_in_store>0</show_in_store>
+					<fields>
+						<scheduler_cron_expr>
+							<label>Scheduler cron expression</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>0</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</scheduler_cron_expr>
+					</fields>
+				</cachecleaner>
+			</groups>
+		</system>
+	</sections>
+</config>
