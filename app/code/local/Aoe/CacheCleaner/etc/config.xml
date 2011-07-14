@@ -31,6 +31,22 @@
 				<schedule><config_path>system/cachecleaner/scheduler_cron_expr</config_path></schedule>
 				<run><model>aoecachecleaner/cleaner::clean</model></run>
 			</aoecachecleaner>
+			<aoecachecleaner_flushsystem>
+				<schedule><config_path>system/cachecleaner/scheduler_cron_expr_flushsystem</config_path></schedule>
+				<run><model>aoecachecleaner/cleaner::flushSystem</model></run>
+			</aoecachecleaner_flushsystem>
+			<aoecachecleaner_flushall>
+				<schedule><config_path>system/cachecleaner/scheduler_cron_expr_flushall</config_path></schedule>
+				<run><model>aoecachecleaner/cleaner::flushAll</model></run>
+			</aoecachecleaner_flushall>
+			<aoecachecleaner_cleanimages>
+				<schedule><config_path>system/cachecleaner/scheduler_cron_expr_cleanimages</config_path></schedule>
+				<run><model>aoecachecleaner/cleaner::cleanImages</model></run>
+			</aoecachecleaner_cleanimages>
+			<aoecachecleaner_cleanmedia>
+				<schedule><config_path>system/cachecleaner/scheduler_cron_expr_cleanmedia</config_path></schedule>
+				<run><model>aoecachecleaner/cleaner::cleanMedia</model></run>
+			</aoecachecleaner_cleanmedia>
 		</jobs>
 	</crontab>
 
