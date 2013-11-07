@@ -1,5 +1,5 @@
 {
-    "name": "fbrnc/Aoe_CacheCleaner",
+    "name": "fbrnc/Aoe_Cachecleaner",
     "license": "OSL-3.0",
     "type": "magento-module",
     "description": "Removes old cache entries in your Magento instance",
