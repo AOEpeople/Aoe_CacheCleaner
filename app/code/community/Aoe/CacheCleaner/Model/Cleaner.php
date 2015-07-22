@@ -22,6 +22,13 @@ class Aoe_CacheCleaner_Model_Cleaner
         Mage::app()->getCache()->clean(Zend_Cache::CLEANING_MODE_OLD);
         $duration = time() - $startTime;
         Mage::log('[CACHECLEANER] Cleaning cache (duration: ' . $duration . ')');
+
+        if (class_exists('Enterprise_PageCache_Model_Cache')) {
+            $startTime = time();
+            Enterprise_PageCache_Model_Cache::getCacheInstance()->getFrontend()->getBackend()->clean(Zend_Cache::CLEANING_MODE_OLD)
+            $duration = time() - $startTime;
+            Mage::log('[CACHECLEANER] Cleaning full page cache (duration: ' . $duration . ')');
+        }
     }
 
     /**
