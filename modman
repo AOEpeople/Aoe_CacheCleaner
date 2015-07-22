@@ -1,2 +1,2 @@
-app/code/local/Aoe/CacheCleaner app/code/local/Aoe/CacheCleaner
+app/code/community/Aoe/CacheCleaner app/code/community/Aoe/CacheCleaner
 app/etc/modules/Aoe_CacheCleaner.xml app/etc/modules/Aoe_CacheCleaner.xml
