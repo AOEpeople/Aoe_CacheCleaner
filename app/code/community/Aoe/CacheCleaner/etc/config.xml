@@ -5,7 +5,7 @@
         <Aoe_CacheCleaner>
             <active>true</active>
             <codePool>local</codePool>
-            <version>0.0.3</version>
+            <version>0.1.0</version>
         </Aoe_CacheCleaner>
     </modules>
 
