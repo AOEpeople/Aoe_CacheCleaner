@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-	<modules>
-		<Aoe_CacheCleaner>
-			<active>true</active>
-			<codePool>local</codePool>
-		</Aoe_CacheCleaner>
-	</modules>
+    <modules>
+        <Aoe_CacheCleaner>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Aoe_CacheCleaner>
+    </modules>
 </config>

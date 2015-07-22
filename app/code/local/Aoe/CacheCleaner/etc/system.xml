@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-	<sections>
-		<system>
-			<groups>
-				<cachecleaner translate="label">
-					<label>Cache Cleaning</label>
-					<comment>All configurations are cron expressions. (E.g. "20 * * * *")</comment>
-					<frontend_type>text</frontend_type>
-					<sort_order>200</sort_order>
-					<show_in_default>1</show_in_default>
-					<show_in_website>0</show_in_website>
-					<show_in_store>0</show_in_store>
-					<fields>
-						<scheduler_cron_expr>
-							<label>Clean old cache entries</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>10</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>0</show_in_website>
-							<show_in_store>0</show_in_store>
-						</scheduler_cron_expr>
-						<scheduler_cron_expr_flushall>
-							<label>Flush Cache Storage</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>20</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>0</show_in_website>
-							<show_in_store>0</show_in_store>
-						</scheduler_cron_expr_flushall>
-						<scheduler_cron_expr_flushsystem>
-							<label>Flush Magento Cache</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>30</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>0</show_in_website>
-							<show_in_store>0</show_in_store>
-						</scheduler_cron_expr_flushsystem>
-						<scheduler_cron_expr_cleanimages>
-							<label>Flush Catalog Images Cache</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>40</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>0</show_in_website>
-							<show_in_store>0</show_in_store>
-						</scheduler_cron_expr_cleanimages>
-						<scheduler_cron_expr_cleanmedia>
-							<label>Flush JavaScript/CSS Cache</label>
-							<frontend_type>text</frontend_type>
-							<sort_order>50</sort_order>
-							<show_in_default>1</show_in_default>
-							<show_in_website>0</show_in_website>
-							<show_in_store>0</show_in_store>
-						</scheduler_cron_expr_cleanmedia>
-						
-					</fields>
-				</cachecleaner>
-			</groups>
-		</system>
-	</sections>
+    <sections>
+        <system>
+            <groups>
+                <cachecleaner translate="label">
+                    <label>Cache Cleaning</label>
+                    <comment>All configurations are cron expressions. (E.g. "20 * * * *")</comment>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>200</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <scheduler_cron_expr>
+                            <label>Clean old cache entries</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </scheduler_cron_expr>
+                        <scheduler_cron_expr_flushall>
+                            <label>Flush Cache Storage</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </scheduler_cron_expr_flushall>
+                        <scheduler_cron_expr_flushsystem>
+                            <label>Flush Magento Cache</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </scheduler_cron_expr_flushsystem>
+                        <scheduler_cron_expr_cleanimages>
+                            <label>Flush Catalog Images Cache</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </scheduler_cron_expr_cleanimages>
+                        <scheduler_cron_expr_cleanmedia>
+                            <label>Flush JavaScript/CSS Cache</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </scheduler_cron_expr_cleanmedia>
+
+                    </fields>
+                </cachecleaner>
+            </groups>
+        </system>
+    </sections>
 </config>

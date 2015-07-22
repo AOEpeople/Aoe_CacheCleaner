@@ -1,61 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
 
-	<modules>
-		<Aoe_CacheCleaner>
-			<active>true</active>
-			<codePool>local</codePool>
-			<version>0.0.3</version>
-		</Aoe_CacheCleaner>
-	</modules>
+    <modules>
+        <Aoe_CacheCleaner>
+            <active>true</active>
+            <codePool>local</codePool>
+            <version>0.0.3</version>
+        </Aoe_CacheCleaner>
+    </modules>
 
-	<global>
+    <global>
 
-		<models>
-			<aoecachecleaner>
-				<class>Aoe_CacheCleaner_Model</class>
-			</aoecachecleaner>
-		</models>
+        <models>
+            <aoecachecleaner>
+                <class>Aoe_CacheCleaner_Model</class>
+            </aoecachecleaner>
+        </models>
 
-		<helpers>
-			<aoecachecleaner>
-				<class>Aoe_CacheCleaner_Helper</class>
-			</aoecachecleaner>
-		</helpers>
+        <helpers>
+            <aoecachecleaner>
+                <class>Aoe_CacheCleaner_Helper</class>
+            </aoecachecleaner>
+        </helpers>
 
-	</global>
+    </global>
 
-	<crontab>
-		<jobs>
-			<aoecachecleaner>
-				<schedule><config_path>system/cachecleaner/scheduler_cron_expr</config_path></schedule>
-				<run><model>aoecachecleaner/cleaner::clean</model></run>
-			</aoecachecleaner>
-			<aoecachecleaner_flushsystem>
-				<schedule><config_path>system/cachecleaner/scheduler_cron_expr_flushsystem</config_path></schedule>
-				<run><model>aoecachecleaner/cleaner::flushSystem</model></run>
-			</aoecachecleaner_flushsystem>
-			<aoecachecleaner_flushall>
-				<schedule><config_path>system/cachecleaner/scheduler_cron_expr_flushall</config_path></schedule>
-				<run><model>aoecachecleaner/cleaner::flushAll</model></run>
-			</aoecachecleaner_flushall>
-			<aoecachecleaner_cleanimages>
-				<schedule><config_path>system/cachecleaner/scheduler_cron_expr_cleanimages</config_path></schedule>
-				<run><model>aoecachecleaner/cleaner::cleanImages</model></run>
-			</aoecachecleaner_cleanimages>
-			<aoecachecleaner_cleanmedia>
-				<schedule><config_path>system/cachecleaner/scheduler_cron_expr_cleanmedia</config_path></schedule>
-				<run><model>aoecachecleaner/cleaner::cleanMedia</model></run>
-			</aoecachecleaner_cleanmedia>
-		</jobs>
-	</crontab>
+    <crontab>
+        <jobs>
+            <aoecachecleaner>
+                <schedule>
+                    <config_path>system/cachecleaner/scheduler_cron_expr</config_path>
+                </schedule>
+                <run>
+                    <model>aoecachecleaner/cleaner::clean</model>
+                </run>
+            </aoecachecleaner>
+            <aoecachecleaner_flushsystem>
+                <schedule>
+                    <config_path>system/cachecleaner/scheduler_cron_expr_flushsystem</config_path>
+                </schedule>
+                <run>
+                    <model>aoecachecleaner/cleaner::flushSystem</model>
+                </run>
+            </aoecachecleaner_flushsystem>
+            <aoecachecleaner_flushall>
+                <schedule>
+                    <config_path>system/cachecleaner/scheduler_cron_expr_flushall</config_path>
+                </schedule>
+                <run>
+                    <model>aoecachecleaner/cleaner::flushAll</model>
+                </run>
+            </aoecachecleaner_flushall>
+            <aoecachecleaner_cleanimages>
+                <schedule>
+                    <config_path>system/cachecleaner/scheduler_cron_expr_cleanimages</config_path>
+                </schedule>
+                <run>
+                    <model>aoecachecleaner/cleaner::cleanImages</model>
+                </run>
+            </aoecachecleaner_cleanimages>
+            <aoecachecleaner_cleanmedia>
+                <schedule>
+                    <config_path>system/cachecleaner/scheduler_cron_expr_cleanmedia</config_path>
+                </schedule>
+                <run>
+                    <model>aoecachecleaner/cleaner::cleanMedia</model>
+                </run>
+            </aoecachecleaner_cleanmedia>
+        </jobs>
+    </crontab>
 
-	<default>
-		<system>
-			<cachecleaner>
-				<scheduler_cron_expr>18 * * * *</scheduler_cron_expr>
-			</cachecleaner>
-		</system>
-	</default>
+    <default>
+        <system>
+            <cachecleaner>
+                <scheduler_cron_expr>18 * * * *</scheduler_cron_expr>
+            </cachecleaner>
+        </system>
+    </default>
 
 </config>
