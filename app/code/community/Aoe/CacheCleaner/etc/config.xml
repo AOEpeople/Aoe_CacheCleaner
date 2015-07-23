@@ -3,8 +3,6 @@
 
     <modules>
         <Aoe_CacheCleaner>
-            <active>true</active>
-            <codePool>local</codePool>
             <version>0.1.1</version>
         </Aoe_CacheCleaner>
     </modules>
