@@ -23,7 +23,7 @@ class Aoe_CacheCleaner_Model_Cleaner
         $duration = time() - $startTime;
         Mage::log('[CACHECLEANER] Cleaning cache (duration: ' . $duration . ')');
 
-        if (class_exists('Enterprise_PageCache_Model_Cache')) {
+        if (Mage::helper('core')->isModuleEnabled('Enterprise_PageCache')) {
             $startTime = time();
             Enterprise_PageCache_Model_Cache::getCacheInstance()->getFrontend()->getBackend()->clean(Zend_Cache::CLEANING_MODE_OLD);
             $duration = time() - $startTime;
