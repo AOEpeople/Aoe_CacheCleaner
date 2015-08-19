@@ -10,4 +10,4 @@ The Aoe_CacheCleaner will clean up old cache-entries by firing `Mage::app()->get
 
 Additionally you're able to clean up other caches as well, such as the Catalog Image Cache and the JavaScript/CSS Cache.
 
-http://www.fabrizio-branca.de/magento-automatic-cache-cleaner.html
+http://fbrnc.net/blog/2011/02/magento-automatic-cache-cleaner
